@@ -1,0 +1,122 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+/* Defaults */
+*, *:before, *:after{box-sizing: border-box;}
+h1,h2,h3,h4,div,p,body,html{margin: 0;}
+html{font: 15px 'Poppins', sans-serif;color: var(--clr-neutral-dark);}
+
+:root{
+  --clr-primary-red: hsl(0, 78%, 62%);
+  --clr-primary-cyan: hsl(180, 62%, 55%);
+  --clr-primary-orange: hsl(34, 97%, 64%);
+  --clr-primary-blue: hsl(212, 86%, 64%);
+  --clr-neutral-dark:hsl(234, 12%, 34%);
+  --clr-neutral-grey:hsl(229, 6%, 66%);
+  --clr-neutral-white:hsl(0, 0%, 98%);
+  --fw-poppins-light:200;
+  --fw-poppins-regular: 400;
+  --fw-poppins-semibold: 600; 
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.technology{
+  padding: 5em 1.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header{
+  max-width: 36em;
+  margin-bottom: 3em;
+}
+
+.header h1:first-of-type{
+  font-weight: var(--fw-poppins-light);
+  color: var(--clr-neutral-dark);
+}
+
+.header > h1{
+  font-size: 1.7rem;
+}
+
+.header > h1, .header > p{
+  text-align: center;
+}
+
+.technology  h2{
+  font-size: 1.4rem;
+  margin-bottom: 0.3em;
+}
+
+.header > p{
+  margin-top: 1.2rem;
+  font-size: 1.0rem;
+}
+
+.technology p {
+  color: var(--clr-neutral-grey);
+}
+
+.technologies{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6em;
+}
+
+.tech{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.7em;
+  border-radius: 0.3em;
+  width: 21.4em;
+}
+
+.tech p{
+  font-size: 0.9rem;
+}
+
+.technologies .tech:nth-of-type(4n+1){
+  border-top: 0.35em solid var(--clr-primary-cyan);
+}
+
+.technologies .tech:nth-of-type(4n+2){
+  border-top: 0.35em solid var(--clr-primary-red);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.technologies .tech:nth-of-type(4n+3){
+  border-top: 0.35em solid var(--clr-primary-orange);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.technologies .tech:nth-of-type(4n+4){
+  border-top: 0.35em solid var(--clr-primary-blue);
+}
+
+.tech > .img{
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 2.5em 0 0 0;
+}
+
+@media(min-width: 1050px){
+  .technologies{
+    flex-flow: column wrap;
+    height: 35.5em;
+    width: 68em;
+    margin: 0;gap: 2em;
+  }
+  .tech{
+    height: 15.5em;
+    margin-top: 10em;
+    margin-bottom: 10em;
+  }
+}
